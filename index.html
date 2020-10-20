@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Responsive Inspirational Landing Page</title>
+</head>
+<body>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Training</a></li>
+      <li><a href="#">Plans</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <section class="banner">
+    <header>
+      <h2 class="logo">Your Logo</h2>
+      <class class="toggle" onclick="toggleMenu()"><i class="fas fa-align-right"></i></class>
+      <class class="toggle2" onclick="toggleMenu()"><i class="fas fa-times"></i></class>
+    </header>
+    <video src="./video.mp4" loop="true" autoplay="true"></video>
+    <div class="overlay" onclick="toggleMenu()"></div>
+    <div class="text">
+      <h2>Be Inspired</h2>
+      <h3>Never give up</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor aliquid eum velit exercitationem quasi nesciunt, nisi, fugit nihil optio accusamus expedita, adipisci earum reprehenderit quisquam tenetur? Cupiditate, enim quas?</p>
+      <a href="#">Join us</a>
+    </div>
+    <ul class="socials">
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+  </section>
+
+  <script type="text/javascript">
+  function toggleMenu(){
+    const header = document.querySelector("header");
+    const banner = document.querySelector(".banner");
+    header.classList.toggle('active');
+    banner.classList.toggle('active');
+  }
+  </script>
+</body>
+</html>
